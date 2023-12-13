@@ -81,7 +81,9 @@
                 console.log("Successful login for: " + response.name);
                 document.getElementById("status").innerHTML =
                     `Thanks for logging in, ${response.name}!
-                    Your Id is ${response.id}`;
+                    Your Id is ${response.id}
+                    You have ${response.posts.data.length} posts
+                    `;
             });
         }
     </script>
