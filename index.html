@@ -37,7 +37,7 @@
 
         window.fbAsyncInit = function () {
             FB.init({
-                appId: "889099359163459",
+                appId: "242188322213972",
                 cookie: true, // enable cookies to allow the server to access
                 // the session
                 xfbml: true, // parse social plugins on this page
@@ -90,7 +90,7 @@
   the FB.login() function when clicked.
 -->
 
-    <fb:login-button config_id="1705971083204820" onlogin="checkLoginState();">
+    <fb:login-button scope="public_profile,email,user_posts" onlogin="checkLoginState();">
     </fb:login-button>
 
     <div id="status"></div>
